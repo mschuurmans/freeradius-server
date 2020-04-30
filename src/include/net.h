@@ -66,7 +66,7 @@ typedef enum {
  *	RFC 2865, Section 3., subsection 'length' says:
  *	" ... and maximum length is 4096."
  */
-#define MAX_RADIUS_LEN	4096
+#define MAX_RADIUS_LEN	8192
 #define MIN_RADIUS_LEN	20
 
 
