@@ -2705,7 +2705,7 @@ RADIUS_PACKET *rad_recv(TALLOC_CTX *ctx, int fd, int flags)
 	 *	packet.
 	 */
 	if (packet->data_len > MAX_PACKET_LEN) {
-		FR_DEBUG_STRERROR_PRINTF("Discarding packet: Larger than RFC limitation of 4096 bytes");
+		FR_DEBUG_STRERROR_PRINTF("Discarding packet: Larger than RFC limitation of 4096 bytes, it's size: %d", packet->data_len);
 		/* packet->data is NULL */
 		rad_free(&packet);
 		return NULL;
