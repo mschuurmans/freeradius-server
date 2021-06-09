@@ -75,7 +75,7 @@ typedef enum {
 /*
  *  The RFC says 4096 octets max, and most packets are less than 256.
  */
-#define MAX_PACKET_LEN 4096
+#define MAX_PACKET_LEN 12288
 
 #include <freeradius-devel/rfc2865.h>
 #include <freeradius-devel/rfc2866.h>
