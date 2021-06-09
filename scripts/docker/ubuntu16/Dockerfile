@@ -19,7 +19,7 @@ WORKDIR /usr/local/src/repositories
 #  Shallow clone the FreeRADIUS source
 #
 ARG source=https://github.com/mschuurmans/freeradius-server.git
-ARG release=v3.0.17.4
+ARG release=v3.0.22.1
 
 RUN git clone --depth 1 --single-branch --branch ${release} ${source}
 WORKDIR freeradius-server
